@@ -1,0 +1,175 @@
+.section__cat{
+    padding: 100px 0px ;
+
+    @media (max-width: $breakpoint992) {
+       padding: 50px 0px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        padding: 30px 0px;
+     }
+}
+
+
+#cat{
+    margin-bottom: 66px;
+
+    @media (max-width: $breakpoint992) {
+        margin-bottom: 33px;
+    }
+}
+
+.cat {
+    display: flex;
+    gap: 32px;
+    margin-top: 37px;
+
+    @media (max-width: $breakpoint992) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__title {
+        transform:scale(1,0.8);
+        font-family: 'Hyperspace Race Expanded';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 109.5%;
+
+        letter-spacing: 0.005em;
+        text-transform: uppercase;
+
+        color: #1c1c1c;
+
+        @media (max-width: $breakpoint768) {
+            font-size: 35px;
+        }
+    }
+
+    &__subtitle {
+        transform:scale(1,0.8);
+        font-family: 'Hyperspace Race Expanded';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 109.5%;
+        /* or 31px */
+        
+        letter-spacing: 0.005em;
+        text-transform: uppercase;
+        
+        color: #1C1C1C;
+        background-image: url(../img/subtitle.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -85px;
+        padding: 10px 30px;
+
+        max-width: 438px;
+        width: 100%;
+
+        @media (max-width: $breakpoint768) {
+            font-size: 25px;
+            padding: 10px 5px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            background-position: -80px;
+        }
+    }
+
+    &__item {
+        border: 1px solid #9ec53b;
+        padding: 70px 25px 33px 25px;
+
+        @media (max-width: $breakpoint992) {
+            flex: 0 1 48%;
+        }
+
+        @media (max-width: $breakpoint768) {
+           flex: 0 0 100%;
+        }
+
+    }
+
+    &__item-box {
+        width: 242.75px;
+        height: 148.62px;
+        background: #424242;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+
+    }
+
+    // &__item-box-img {
+    // }
+
+    &__item-title {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.005em;
+
+        color: #000000;
+
+        margin-top: 70px;
+    }
+
+    &__item-subtitle {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.005em;
+
+        color: #4a4a4a;
+        margin-top: 6px;
+        margin-bottom: 24x;
+    }
+
+    &__item-button {
+        font-family: 'Montserrat';
+        display: block;
+        background: #1e1e1e;
+
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.005em;
+        margin-top: 24px;
+
+        color: #ffffff;
+
+        width: 100%;
+        max-width: 100%;
+
+        padding: 13px 0px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 11px;
+
+        & img {
+            transition: all ease .3s;
+        }
+
+        &:hover{
+
+
+            & img {
+                transform: translateX(11px);
+            }
+
+        }
+
+
+
+    }
+}
